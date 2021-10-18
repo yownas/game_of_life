@@ -11,5 +11,5 @@ But it will be very slow if the input file is big.
 (Apparently needs gawk.)
 
 To create a random text block you can do something like this:
-'X=50 ; Y=50 ; cat /dev/urandom | tr -dc '0-9a-z' | fold -w ${1:-$Y} | head -n $X | sed 's/[0-9]/O/g;s/[a-z]/ /g' > random_$X+$Y.txt'
+`X=50 ; Y=50 ; cat /dev/urandom | tr -dc '0-9a-z' | fold -w ${1:-$Y} | head -n $X | sed 's/[0-9]/O/g;s/[a-z]/ /g' > random_$X+$Y.txt`
 
