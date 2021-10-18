@@ -7,3 +7,5 @@ To run it: `cat random_cells.txt | ./gol.sh`
 
 Should work with any rectangular text-file with spaces as empty cells and "O" as a living cell.
 But it will be very slow if the input file is big.
+
+(Apparently needs gawk.)
